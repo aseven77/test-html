@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+    <title>Главная</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;family=Raleway:ital,wght@0,100..900;1,100..900&amp;display=swap"/>
+    <link rel="stylesheet" href="style/libs.min.css"/>
+    <link rel="stylesheet" href="style/main.css"/>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container-fluid">
+        <div class="header-main"><a class="logo" href=""> <img src="images/logo.svg" alt="LoremIpsum.Net"/></a>
+          <nav class="nav"><a class="nav__link nav__link--active" href="">Бизнес</a><a class="nav__link" href="">О нас</a><a class="nav__link" href="">Цены</a><a class="nav__link" href="">Оформить заказ</a></nav>
+          <button class="open-menu js-open-menu" type="button"><span> </span><span> </span><span> </span></button>
+        </div>
+      </div>
+    </header>
+    <div class="index-section">
+      <div class="index-section__main">
+        <div class="container-fluid">
+          <h1 class="title index-section__title"> <span>Lorem ipsum </span>dolor sit <br class="mb-show">amet consectetur <span>adipiscing</span></h1><strong>At&nbsp;vero eos et&nbsp;accusamus et&nbsp;iusto odio dignissimos ducimus!</strong>
+          <ul class="list index-section__list">
+            <li class="list__item">Totam rem aperiam eaque ipsa</li>
+            <li class="list__item">Sit voluptatem accusantium doloremque laudantium</li>
+            <li class="list__item">Sed ut&nbsp;perspiciatis, unde omnis iste natus error</li>
+          </ul>
+          <div class="button-listing"><a class="button" href="#">Заказать</a><a class="button button__secondary" href="#">подробнее</a></div>
+        </div>
+      </div>
+    </div>
+    <section class="section-ordering">
+      <div class="container-fluid">
+        <h2 class="title section-ordering__title">Оформление  <span>Заказа</span></h2>
+        <div class="secondary-text">Перед заполнением формы ознакомьтесь с&nbsp;нашей схемой работы!</div>
+        <div class="steps">
+          <div class="step">
+            <div class="step__circle">
+                <svg class="icon">
+                  <use xlink:href="images/sprite.svg#search"></use>
+                </svg>
+            </div>
+            <div class="step__desc">Lorem ipsum dolor sit amet</div>
+          </div>
+          <div class="step">
+            <div class="step__circle">
+                <svg class="icon">
+                  <use xlink:href="images/sprite.svg#percent"></use>
+                </svg>
+            </div>
+            <div class="step__desc">Сonsecteturadipiscing elit</div>
+          </div>
+          <div class="step">
+            <div class="step__circle">
+                <svg class="icon">
+                  <use xlink:href="images/sprite.svg#file"></use>
+                </svg>
+            </div>
+            <div class="step__desc">Sed do eiusmod tempor</div>
+          </div>
+          <div class="step">
+            <div class="step__circle">
+                <svg class="icon">
+                  <use xlink:href="images/sprite.svg#message"></use>
+                </svg>
+            </div>
+            <div class="step__desc">Esse cillum dolore eu&nbsp;fugiat</div>
+          </div>
+          <div class="step">
+            <div class="step__circle">
+                <svg class="icon">
+                  <use xlink:href="images/sprite.svg#money"></use>
+                </svg>
+            </div>
+            <div class="step__desc">Excepteur sint occaecat cupidatat non proident</div>
+          </div>
+        </div>
+        <form class="form-section">
+          <div class="form-section__grid">
+            <div class="input-select">
+              <input type="hidden" name="type"/>
+              <div class="input-select__head"> <span>Выберите тип системы</span>
+                  <svg class="icon">
+                    <use xlink:href="images/sprite.svg#arrow"></use>
+                  </svg>
+              </div>
+              <div class="input-select__body">
+                <div class="input-select__list">
+                  <div class="input-select__item">Sed ut perspiciatis</div>
+                  <div class="input-select__item">Nemo enim ipsam</div>
+                  <div class="input-select__item">Et harum quidem</div>
+                  <div class="input-select__item">Temporibus autem</div>
+                  <div class="input-select__item">Itaque earum rerum </div>
+                  <div class="input-select__item">Nemo enim ipsam</div>
+                  <div class="input-select__item">Et harum quidem</div>
+                  <div class="input-select__item">Temporibus autem</div>
+                  <div class="input-select__item">Itaque earum rerum </div>
+                  <div class="input-select__item">Nemo enim ipsam</div>
+                  <div class="input-select__item">Et harum quidem</div>
+                  <div class="input-select__item">Temporibus autem</div>
+                  <div class="input-select__item">Itaque earum rerum </div>
+                  <div class="input-select__item">Nemo enim ipsam</div>
+                  <div class="input-select__item">Et harum quidem</div>
+                  <div class="input-select__item">Temporibus autem</div>
+                  <div class="input-select__item">Itaque earum rerum</div>
+                </div>
+              </div>
+            </div>
+            <input class="input" placeholder="Ваш e-mail" type="email" name="email"/>
+            <input class="input" placeholder="Ваше имя" type="text" name="name"/>
+            <div class="form-section__range">
+              <div class="range"></div>
+              <div class="range__head">
+                <div class="range__title">Sed ut perspiciatis, unde omnis iste natus</div>
+                <div class="range__value"></div>
+              </div>
+              <div class="slider" id="slider" data-start="75" data-min="0" data-max="100"></div>
+            </div>
+            <label class="input-file" for="file">
+              <div class="input-file__title">Прикрепить файл</div>
+              <input id="file" type="file" name=""/>
+            </label>
+            <input type="hidden" name="natus" value="" id="natus"/>
+          </div>
+          <button class="button form-section__button">Отправить</button>
+        </form>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container-fluid">
+        <div class="footer-main">
+          <div class="copyright">© 2018 «LoremIpsum.net» Все права защищены.</div>
+          <div class="list-items">
+            <div class="footer-item">
+                <svg class="icon">
+                  <use xlink:href="images/sprite.svg#qiwi"></use>
+                </svg>
+              <div class="footer-item__value">Qiwi wallet</div>
+            </div>
+            <div class="footer-item">
+                <svg class="icon">
+                  <use xlink:href="images/sprite.svg#yamoney"></use>
+                </svg>
+              <div class="footer-item__value">Yandex Money</div>
+            </div>
+            <div class="footer-item">
+                <svg class="icon">
+                  <use xlink:href="images/sprite.svg#webmoney"></use>
+                </svg>
+              <div class="footer-item__value">Web Money</div>
+            </div>
+          </div>
+          <div class="list-items list-items--links"><a class="footer-item" href="milto:info@ipsum228.com">
+                <svg class="icon">
+                  <use xlink:href="images/sprite.svg#email"></use>
+                </svg>
+              <div class="footer-item__value">info@ipsum228.com</div></a><a class="footer-item" href="#">
+                <svg class="icon">
+                  <use xlink:href="images/sprite.svg#vk"></use>
+                </svg>
+              <div class="footer-item__value">Мы вконтакте</div></a></div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/libs.min.js"> </script>
+    <script src="js/script.js"> </script>
+  </body>
+</html>

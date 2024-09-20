@@ -1,0 +1,29 @@
+@mixin xllarge {
+    @media (min-width: 1490px) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin laptop {
+    @media (min-width: 1025px) {
+        @content;
+    }
+}
+
+@mixin medium {
+    @media (min-width: 992px) {
+        @content;
+    }
+}
+
+@mixin small {
+    @media (min-width: 767px) {
+        @content;
+    }
+}

@@ -1,0 +1,22 @@
+mixin footer
+    footer.footer
+        .container-fluid
+            .footer-main
+                .copyright © 2018 «LoremIpsum.net» Все права защищены.
+                .list-items
+                    .footer-item
+                        +svg("qiwi")
+                        .footer-item__value Qiwi wallet
+                    .footer-item
+                        +svg("yamoney")
+                        .footer-item__value Yandex Money
+                    .footer-item
+                        +svg("webmoney")
+                        .footer-item__value Web Money
+                .list-items.list-items--links
+                    a(href="milto:info@ipsum228.com").footer-item
+                        +svg("email")
+                        .footer-item__value info@ipsum228.com
+                    a(href="#").footer-item
+                        +svg("vk")
+                        .footer-item__value Мы вконтакте

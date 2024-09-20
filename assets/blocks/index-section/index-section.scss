@@ -1,0 +1,82 @@
+.index-section {
+    padding: 120px 0 50px;
+    background-image: url("../images/section-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    background-position: top center;
+    align-items: center;
+
+    @include medium {
+        padding: 205px 0;
+        background-position: center;
+    }
+
+    &__main {
+        width: 100%;
+
+
+        @include medium {
+            font-size: 20px;
+        }
+    }
+
+    &__title {
+        font-size: 24px;
+
+        @include medium {
+            font-size: 48px;
+            text-align: left;
+            max-width: 780px;
+        }
+
+        &:not(:last-child) {
+
+            @include medium {
+                margin-bottom: 90px;
+            }
+
+        }
+    }
+
+    &__list {
+
+        &:not(:last-child) {
+            margin-bottom: 20px;
+
+            @include medium {
+                margin-bottom: 80px;
+            }
+        }
+    }
+}
+
+.list {
+    padding: 10px 0 0;
+    margin: 0;
+    list-style: none;
+
+    &__item {
+        position: relative;
+        padding-left: 25px;
+
+        &::before {
+            content: '';
+            background-image: url("data:image/svg+xml,%0A%3Csvg width='25' height='22' viewBox='0 0 25 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 10.245H14.94V11.755H10V10.245Z' fill='black'/%3E%3C/svg%3E%0A");
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 25px;
+            height: 22px;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 5px;
+        }
+    }
+}
+
+.button-listing {
+    display: flex;
+    gap: 30px;
+}

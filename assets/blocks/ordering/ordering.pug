@@ -1,0 +1,66 @@
+mixin ordering
+    section.section-ordering
+        .container-fluid
+            h2.title.section-ordering__title Оформление  
+                span Заказа
+            .secondary-text Перед заполнением формы ознакомьтесь с&nbsp;нашей схемой работы!
+            .steps
+                .step
+                    .step__circle
+                        +svg("search")
+                    .step__desc Lorem ipsum dolor sit amet
+                .step
+                    .step__circle
+                        +svg("percent")
+                    .step__desc Сonsecteturadipiscing elit
+                .step
+                    .step__circle
+                        +svg("file")
+                    .step__desc Sed do eiusmod tempor
+                .step
+                    .step__circle
+                        +svg("message")
+                    .step__desc Esse cillum dolore eu&nbsp;fugiat
+                .step
+                    .step__circle
+                        +svg("money")
+                    .step__desc Excepteur sint occaecat cupidatat non proident
+            form.form-section
+                .form-section__grid
+                    .input-select
+                        input(type="hidden", name="type")
+                        .input-select__head  
+                            span Выберите тип системы
+                            +svg("arrow")
+                        .input-select__body
+                            .input-select__list
+                                .input-select__item Sed ut perspiciatis
+                                .input-select__item Nemo enim ipsam
+                                .input-select__item Et harum quidem
+                                .input-select__item Temporibus autem
+                                .input-select__item Itaque earum rerum 
+                                .input-select__item Nemo enim ipsam
+                                .input-select__item Et harum quidem
+                                .input-select__item Temporibus autem
+                                .input-select__item Itaque earum rerum 
+                                .input-select__item Nemo enim ipsam
+                                .input-select__item Et harum quidem
+                                .input-select__item Temporibus autem
+                                .input-select__item Itaque earum rerum 
+                                .input-select__item Nemo enim ipsam
+                                .input-select__item Et harum quidem
+                                .input-select__item Temporibus autem
+                                .input-select__item Itaque earum rerum
+                    input.input(placeholder="Ваш e-mail" type="email" name="email")
+                    input.input(placeholder="Ваше имя" type="text" name="name")
+                    .form-section__range
+                        .range
+                        .range__head
+                            .range__title Sed ut perspiciatis, unde omnis iste natus
+                            .range__value
+                        .slider#slider(data-start="75" data-min="0" data-max="100")
+                    label(for="file").input-file
+                        .input-file__title Прикрепить файл
+                        input#file(type="file", name="")
+                    input(type="hidden", name="natus" value="")#natus
+                button.button.form-section__button Отправить
